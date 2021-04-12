@@ -1,0 +1,32 @@
+{
+  "ingredienser": [
+    {
+      "ingredTitle": "Chili",
+      "ingredStrength": 1
+    },
+    {
+      "ingredTitle": "Habanero",
+      "ingredStrength": 3
+    },
+    {
+      "ingredTitle": "Tabasco",
+      "ingredStrength": 1
+    },
+    {
+      "ingredTitle": "Jalapeño",
+      "ingredStrength": 2
+    },
+    {
+      "ingredTitle": "Grön Paprika",
+      "ingredStrength": 0
+    },
+    {
+      "ingredTitle": "Röd Paprika",
+      "ingredStrength": 0
+    },
+    {
+      "ingredTitle": "Grön chili",
+      "ingredStrength": 1
+    }
+  ]
+  }

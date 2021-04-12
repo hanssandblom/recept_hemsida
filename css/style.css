@@ -1,0 +1,240 @@
+* {padding:0; margin:0;}
+a {text-decoration:none;}
+p {padding-left:10px;}
+.container {width:auto; margin-left:1px; margin-right:auto;}
+.header {background-color:#8d0801ff}
+.header h10 {color:white; line-height:80px; font-size: 20px}
+.pics  h3 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
+.pics  form { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 12.4px; }
+.header img {float:left; height:70px; width:100px; padding:5px; margin-right:20px}
+.footer {clear:left; color:white;background-color:	#7a5c58ff;}
+
+
+/* Color scheme ----------- */
+.header h100 {color:#001427ff; line-height:80px;}
+.header h100 {color:#708d81ff; line-height:80px;}
+.header h100 {color:#f4d58dff; line-height:80px;}
+.header h100 {color:#bf0603ff; line-height:80px;}
+.header h100 {color:#8d0801ff; line-height:80px;}
+.header h100 {color:#7a5c58ff; line-height:80px;}
+.header h100 {color:#8d0801ff; line-height:80px;}
+.header h100 {color:#f06543ff; line-height:80px;}
+.header h100 {color:#a63a50ff; line-height:80px;}
+.header h100 {color:#ae4c60ff; line-height:80px;}
+.header h100 {color:#b55c6eff; line-height:80px;}
+
+html { font-size: 14px; }
+body { padding: 1rem; }
+
+.grid-container {
+    display: grid;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+    .grid-container { grid-template-columns: repeat(1, 1fr); }
+    .header h10 {color:white; font-size: 15px;}
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+    .grid-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+    .grid-container { grid-template-columns: repeat(4, 1fr); }
+}
+
+.grid-container-sub {
+    display: grid;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+    .grid-container-sub { grid-template-columns: repeat(1, 1fr); }
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+    .grid-container-sub { grid-template-columns: repeat(3, 1fr); }
+}
+
+.pic {
+    position: relative;
+    background-color: dodgerblue;
+    color: white;
+    padding: 1rem;
+    height: 4rem;
+}
+
+.pics {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.pics:hover {
+    opacity: 1;
+}
+
+.pics__text {
+    width: 160px;
+    position: relative;
+    z-index: 1;
+    top: -60px;
+    left: 35px;
+    background-color: #001427ff;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pic_sub {
+    position: relative;
+    background-color: dodgerblue;
+    color: white;
+    padding: 1rem;
+    height: 4rem;
+}
+
+.pics_sub {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.pics_sub:hover {
+    opacity: 1;
+}
+
+.pics_sub__text {
+    width: 160px;
+    position: relative;
+    z-index: 1;
+    top: 5px;
+    left: 35px;
+    background-color: #001427ff;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.topnavi {
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnavi a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnavi a:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (min-width: 600px) {
+    .topnavi {padding-top: 10px;}
+    .topnavi a {font-size: 12px;}
+}
+
+.sidenavi {
+    width: 120px;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+    /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+    /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+    /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+    /* Styles */
+}
+
+.heightpic {
+    display: inline-block;
+    position: relative;
+}
+.text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 22px
+}
+.textstatic {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 22px
+}

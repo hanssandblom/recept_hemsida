@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hasses heta härligheter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/allarecept.js"></script>
+<script type="text/javascript" src="js/localstorage_user.js"></script>
+<script type="text/javascript" src="js/validateform.js"></script>
+
+<div class="container">
+
+    <div class="header">
+        <img src="img/img_3.png" alt="heta recept image" />
+        <h10>Hasses heta härligheter</h10>
+    </div>
+
+    <div class="topnavi">
+        <a href="Info.html">Info/Contact</a>
+        <a href="about.html">Om mig</a>
+    </div>
+
+    <button class="w3-button w3-grey" onclick="w3_open()">☰</button>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-card" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item">Stäng &times;</button>
+        <a href="visaalla.html" class="w3-bar-item w3-button">Alla recept json</a>
+        <a href="visarandom.html" class="w3-bar-item w3-button">Recept skaparen</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Recept
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="w3-dropdown-content w3-bar-block">
+                <a href="stark.html" class="w3-bar-item w3-button">Chili con carne</a>
+                <a href="starkare.html" class="w3-bar-item w3-button">Äkta chiligryta</a>
+                <a href="thai.html" class="w3-bar-item w3-button">Phad thai</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="pics">
+            <a href="stark.html">
+                <img src="img/stark.png" alt="stark image" title="Stark"/>
+                <div class="pics__text">
+                    <h4>Stark</h4>
+                    <p>Dagens favorit</p>
+                </div>
+            </a>
+        </div>
+        <div class="pics">
+            <a href="starkare.html">
+                <img src="img/starkare.png" alt="starkare image" title="Starkare"/>
+                <div class="pics__text">
+                    <h4>Starkare</h4>
+                    <p>Dagens favorit</p>
+                </div>
+            </a>
+        </div>
+        <div class="pics">
+            <a href="starkast.html">
+                <img src="img/starkast.png" alt="starkast image" title="Starkast"/>
+                <div class="pics__text">
+                    <h4>Starkast</h4>
+                    <p>Dagens favorit</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="pics">
+            <h3>Bli medlem:</h3>
+            <form name="myForm" method="post">
+                <label for="username">Användarnamn:</label><br>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="email">Fyll i email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <button type="submit" id="skicka" onclick="validateForm();">Skicka</button>
+                <button type="submit" id="rensa">Rensa</button>
+            </form>
+
+        </div>
+        <script src="js/localstorage_user.js"></script>
+    </div>
+
+    <div class="footer">
+        <p>Sida av Hans Sandblom    hans.sandblom@iths.se</p>
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</div>
+</body>
+</html>

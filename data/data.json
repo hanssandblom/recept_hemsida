@@ -1,0 +1,20 @@
+{
+  "recepts": [
+    {
+      "receptTitle": "Chili",
+      "receptContent": "Röd chili, Högrev, Öl",
+      "receptDate": "2021-03-24"
+    },
+    {
+      "receptTitle": "Grön chilisås",
+      "receptContent": "Gröna chilifrukter, Vitlöksklyftor, Färskpressad limejuice, Salt, Peppar",
+      "receptDate": "2021-03-24"
+    },
+    {
+      "receptTitle": "Hotwings",
+      "receptContent": "Kyckling, Chilipasta, Lökpulver",
+      "receptDate": "2021-03-24"
+    }
+  ]
+  }
+
